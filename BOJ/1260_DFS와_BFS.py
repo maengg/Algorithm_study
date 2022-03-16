@@ -40,7 +40,6 @@ def bfs(n):
             print(cur_node, end=' ')
             visited.append(cur_node)
             queue.extend(graph[cur_node])
-    return visited
 
 dfs(start)
 print()
