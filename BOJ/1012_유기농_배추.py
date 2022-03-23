@@ -36,6 +36,7 @@ for _ in range(test_case):
         x, y = map(int, sys.stdin.readline().split())
         graph[x][y] = 1
     for a in range(len(graph)):
+        # 첫줄에 배추 더 없는 동안만 반복
         while graph[a].count(1) != 0:
             b = graph[a].index(1)
             bfs(graph, a, b)
